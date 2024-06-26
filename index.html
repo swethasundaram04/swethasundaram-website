@@ -1,0 +1,338 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swetha Sundaram Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Swetha</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a href="mailto:swethasundaram04@gmail.com" target="_blank">
+              <img
+                src="icons/email.png"
+                alt="Email"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/swetha04/" target="_blank">
+              <img
+                src="icons/linkedin.png"
+                alt="LinkedIn"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/swethasundaram04" target="_blank">
+              <img
+                src="icons/github.png"
+                alt="GitHub"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://swethasundaram.medium.com/" target="_blank">
+              <img
+                src="icons/medium.png"
+                alt="Medium"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="hacker-logo">
+        <div class="eye eye--left">
+          <div class="eye-pupil"></div>
+        </div>
+        <div class="eye eye--right">
+          <div class="eye-pupil"></div>
+        </div>
+      </div>
+      <h1 class="typing">
+        Hi, I'm <span class="changing-text"></span><span class="cursor">|</span>
+      </h1>
+      <p class="subtext">I protect the world from hackers.</p>
+      <p class="description about-container">
+        I'm based in Toronto and I specialize in protecting organizations from
+        digital threats. My expertise lies in identifying vulnerabilities and
+        implementing robust security measures to safeguard critical assets. By
+        staying ahead of emerging threats, I ensure proactive and effective
+        protection, enabling businesses to operate safely in today's
+        interconnected world.
+      </p>
+      <button onclick="location.href='mailto:swethasundaram04@gmail.com'">
+        Say hi!
+      </button>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <h2 class="typing-about">
+          <span class="changing-text-about"></span
+          ><span class="cursor-about">|</span>
+        </h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a Security Analyst at
+              <span class="green-text">TCS Canada</span>, specializing in
+              protecting the organization from digital threats through advanced
+              threat analysis and cybersecurity measures. I hold a Postgraduate
+              Certificate in Information Systems Business Analysis with a focus
+              on Cybersecurity from George Brown College.
+            </p>
+            <p>Here are some technologies I have been working with:</p>
+            <div class="tools-container">
+              <ul class="tools-list">
+                <li>
+                  <span class="green-arrow">&#9656;</span>SIEM: QRadar, Sentinel
+                </li>
+                <li><span class="green-arrow">&#9656;</span>XDR: Cortex XDR</li>
+                <li>
+                  <span class="green-arrow">&#9656;</span>EDR: CrowdStrike
+                </li>
+                <li><span class="green-arrow">&#9656;</span>SOAR: Demisto</li>
+                <li>
+                  <span class="green-arrow">&#9656;</span>Vulnerability
+                  Management: Nessus
+                </li>
+                <li>
+                  <span class="green-arrow">&#9656;</span>CSPM: Palo Alto Prisma
+                </li>
+              </ul>
+              <ul class="tools-list">
+                <li>
+                  <span class="green-arrow">&#9656;</span> Programming: Python,
+                  Shell Scripting (Linux)
+                </li>
+                <li>
+                  <span class="green-arrow">&#9656;</span> Threat Analysis:
+                  Phishing, Malware, APT, ACL, Use Case, Rules, Intrusion
+                  Prevention, DDoS, Vulnerability Assessment
+                </li>
+                <li>
+                  <span class="green-arrow">&#9656;</span>Other Tools: RSA
+                  Archer, IDPS/IPS: CASB
+                </li>
+              </ul>
+            </div>
+            <p>
+              Outside of work, I love going to the gym and cooking. When I'm not
+              in front of my desk, you can find me trying out new recipes from
+              TikTok.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="icons/swetha1.png" alt="Your photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="about-container">
+        <h2 class="typing-experience">
+          <span class="changing-text-experience"></span
+          ><span class="cursor-experience">|</span>
+        </h2>
+        <div class="experience-container">
+          <div class="company-list">
+            <div
+              class="company-item active"
+              onclick="showDetails('tcs-canada')"
+            >
+              <span class="green-text">TATA CONSULTANCY SERVICES CANADA</span>
+            </div>
+            <div class="company-item" onclick="showDetails('george-brown')">
+              <span class="green-text">GEORGE BROWN COLLEGE</span>
+            </div>
+            <div class="company-item" onclick="showDetails('tcs-india')">
+              <span class="green-text">TCS INDIA</span>
+            </div>
+            <div class="company-item" onclick="showDetails('maintwiz')">
+              <span class="green-text">MAINTWIZ TECHNOLOGIES</span>
+            </div>
+          </div>
+          <div class="company-details">
+            <div id="tcs-canada" class="details-content active">
+              <h3>
+                IT Security Analyst @
+                <span class="green-text">TATA CONSULTANCY SERVICES CANADA</span>
+              </h3>
+              <p>MAY 2022 - PRESENT</p>
+              <ul>
+                <li>
+                  Investigated security incidents using SIEM, EDR, and XDR
+                  tools, providing incident response, monitoring, and log
+                  analysis.
+                </li>
+                <li>
+                  Achieved a 30% reduction in security incidents and improved
+                  response time by 25% through proactive measures and continuous
+                  monitoring.
+                </li>
+              </ul>
+            </div>
+            <div id="george-brown" class="details-content">
+              <h3>
+                Information Systems Business Analysis specializing in
+                Cybersecurity @
+                <span class="green-text"><br />GEORGE BROWN COLLEGE</span>
+              </h3>
+              <p>SEPT 2021 - AUG 2022</p>
+              <ul>
+                <li>
+                  Facilitated data-driven decision-making and implemented
+                  advanced threat detection and response mechanisms, reducing
+                  the risk of security breaches and ensuring robust data
+                  protection.
+                </li>
+              </ul>
+            </div>
+            <div id="tcs-india" class="details-content">
+              <h3>
+                Cybersecurity Analyst @<span class="green-text">
+                  TCS INDIA</span
+                >
+              </h3>
+              <p>SEPT 2019 - SEPT 2021</p>
+              <ul>
+                <li>
+                  Investigated and triaged incidents using SIEM (QRadar), EDR
+                  (CrowdStrike), SOAR, and automated processes through basic
+                  Python scripts.
+                </li>
+                <li>
+                  Achieved a 40% enhancement in network security through
+                  post-incident reviews and implementation of best practices.
+                </li>
+              </ul>
+            </div>
+            <div id="maintwiz" class="details-content">
+              <h3>
+                Security Analyst Intern @
+                <span class="green-text">MAINTWIZ TECHNOLOGIES</span>
+              </h3>
+              <p>JAN 2019 - MAY 2019</p>
+              <ul>
+                <li>
+                  Conducted security assessments and monitored security events,
+                  maintaining team engagement.
+                </li>
+                <li>
+                  Investigated and resolved over 50 security incidents with a
+                  90% success rate.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-container">
+        <h2 class="typing-projects">
+          <span class="changing-text-projects"></span
+          ><span class="cursor-projects">|</span>
+        </h2>
+        <div class="projects-grid">
+          <div class="project-box">
+            <div class="folder-icon">
+              <img src="icons/folder.png" alt="Folder" />
+            </div>
+            <div class="github-icon">
+              <a href="https://github.com/project1" target="_blank">
+                <img src="icons/github.png" alt="GitHub" />
+              </a>
+            </div>
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+          </div>
+          <div class="project-box">
+            <div class="folder-icon">
+              <img src="icons/folder.png" alt="Folder" />
+            </div>
+            <div class="github-icon">
+              <a href="https://github.com/project2" target="_blank">
+                <img src="icons/github.png" alt="GitHub" />
+              </a>
+            </div>
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+          </div>
+          <div class="project-box">
+            <div class="folder-icon">
+              <img src="icons/folder.png" alt="Folder" />
+            </div>
+            <div class="github-icon">
+              <a href="https://github.com/project3" target="_blank">
+                <img src="icons/github.png" alt="GitHub" />
+              </a>
+            </div>
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="certifications-container">
+        <h2 class="typing-certifications">
+          <span class="changing-text-certifications"></span
+          ><span class="cursor-certifications">|</span>
+        </h2>
+        <div class="certifications-grid">
+          <div class="certification-box">
+            <h3>Certified in Cybersecurity (In progress)</h3>
+            <p>
+              The Certified in Cybersecurity (CC) certification is provided by
+              (ISC)²
+            </p>
+            <div class="certification-icon">
+              <img src="icons/certification.png" alt="Certification" />
+            </div>
+          </div>
+          <div class="certification-box">
+            <h3>
+              CompTIA Security+ <br />
+              (In progress)
+            </h3>
+            <p>The CompTIA Security+ certification is provided by CompTIA</p>
+            <div class="certification-icon">
+              <img src="icons/certification.png" alt="Certification" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Swetha Sundaram. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+  </body>
+</html> -->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Other head elements -->
+</head>
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Swetha Sundaram Portfolio</title> <link rel="stylesheet" href="styles.css" /> </head> <body> <header> <nav> <ul class="nav-links"> <li><a href="#home">Swetha</a></li> <li><a href="#about">About</a></li> <li><a href="#experience">Experience</a></li> <li><a href="#projects">Projects</a></li> <li><a href="#certifications">Certifications</a></li> </ul> <ul class="social-links"> <li> <a href="mailto:swethasundaram04@gmail.com" target="_blank"> <img src="icons/email.png" alt="Email" style="width: 40px; height: 40px" /> </a> </li> <li> <a href="https://www.linkedin.com/in/swetha04/" target="_blank"> <img src="icons/linkedin.png" alt="LinkedIn" style="width: 40px; height: 40px" /> </a> </li> <li> <a href="https://github.com/swethasundaram04" target="_blank"> <img src="icons/github.png" alt="GitHub" style="width: 40px; height: 40px" /> </a> </li> <li> <a href="https://swethasundaram.medium.com/" target="_blank"> <img src="icons/medium.png" alt="Medium" style="width: 40px; height: 40px" /> </a> </li> </ul> </nav> </header> <section id="home"> <div class="hacker-logo"> <div class="eye eye--left"> <div class="eye-pupil"></div> </div> <div class="eye eye--right"> <div class="eye-pupil"></div> </div> </div> <h1 class="typing"> Hi, I'm <span class="changing-text"></span><span class="cursor">|</span> </h1> <p class="subtext">I protect the world from hackers.</p> <p class="description about-container"> I'm based in Toronto and I specialize in protecting organizations from digital threats. My expertise lies in identifying vulnerabilities and implementing robust security measures to safeguard critical assets. By staying ahead of emerging threats, I ensure proactive and effective protection, enabling businesses to operate safely in today's interconnected world. </p> <button onclick="location.href='mailto:swethasundaram04@gmail.com'"> Say hi! </button> </section> <section id="about"> <div class="about-container"> <h2 class="typing-about"> <span class="changing-text-about"></span ><span class="cursor-about">|</span> </h2> <div class="about-content"> <div class="about-text"> <p> I am a Security Analyst at <span class="green-text">TCS Canada</span>, specializing in protecting the organization from digital threats through advanced threat analysis and cybersecurity measures. I hold a Postgraduate Certificate in Information Systems Business Analysis with a focus on Cybersecurity from George Brown College. </p> <p>Here are some technologies I have been working with:</p> <div class="tools-container"> <ul class="tools-list"> <li> <span class="green-arrow">&#9656;</span>SIEM: QRadar, Sentinel </li> <li><span class="green-arrow">&#9656;</span>XDR: Cortex XDR</li> <li> <span class="green-arrow">&#9656;</span>EDR: CrowdStrike </li> <li><span class="green-arrow">&#9656;</span>SOAR: Demisto</li> <li> <span class="green-arrow">&#9656;</span>Vulnerability Management: Nessus </li> <li> <span class="green-arrow">&#9656;</span>CSPM: Palo Alto Prisma </li> </ul> <ul class="tools-list"> <li> <span class="green-arrow">&#9656;</span> Programming: Python, Shell Scripting (Linux) </li> <li> <span class="green-arrow">&#9656;</span> Threat Analysis: Phishing, Malware, APT, ACL, Use Case, Rules, Intrusion Prevention, DDoS, Vulnerability Assessment </li> <li> <span class="green-arrow">&#9656;</span>Other Tools: RSA Archer, IDPS/IPS: CASB </li> </ul> </div> <p> Outside of work, I love going to the gym and cooking. When I'm not in front of my desk, you can find me trying out new recipes from TikTok. </p> </div> <div class="about-image"> <img src="icons/swetha1.png" alt="Your photo" /> </div> </div> </div> </section> <section id="experience"> <div class="about-container"> <h2 class="typing-experience"> <span class="changing-text-experience"></span ><span class="cursor-experience">|</span> </h2> <div class="experience-container"> <div class="company-list"> <div class="company-item active" onclick="showDetails('tcs-canada')" > <span class="green-text">TATA CONSULTANCY SERVICES CANADA</span> </div> <div class="company-item" onclick="showDetails('george-brown')"> <span class="green-text">GEORGE BROWN COLLEGE</span> </div> <div class="company-item" onclick="showDetails('tcs-india')"> <span class="green-text">TCS INDIA</span> </div> <div class="company-item" onclick="showDetails('maintwiz')"> <span class="green-text">MAINTWIZ TECHNOLOGIES</span> </div> </div> <div class="company-details"> <div id="tcs-canada" class="details-content active"> <h3> IT Security Analyst @ <span class="green-text">TATA CONSULTANCY SERVICES CANADA</span> </h3> <p>MAY 2022 - PRESENT</p> <ul> <li> Investigated security incidents using SIEM, EDR, and XDR tools, providing incident response, monitoring, and log analysis. </li> <li> Achieved a 30% reduction in security incidents and improved response time by 25% through proactive measures and continuous monitoring. </li> </ul> </div> <div id="george-brown" class="details-content"> <h3> Information Systems Business Analysis specializing in Cybersecurity @ <span class="green-text"><br />GEORGE BROWN COLLEGE</span> </h3> <p>SEPT 2021 - AUG 2022</p> <ul> <li> Facilitated data-driven decision-making and implemented advanced threat detection and response mechanisms, reducing the risk of security breaches and ensuring robust data protection. </li> </ul> </div> <div id="tcs-india" class="details-content"> <h3> Cybersecurity Analyst @<span class="green-text"> TCS INDIA</span > </h3> <p>SEPT 2019 - SEPT 2021</p> <ul> <li> Investigated and triaged incidents using SIEM (QRadar), EDR (CrowdStrike), SOAR, and automated processes through basic Python scripts. </li> <li> Achieved a 40% enhancement in network security through post-incident reviews and implementation of best practices. </li> </ul> </div> <div id="maintwiz" class="details-content"> <h3> Security Analyst Intern @ <span class="green-text">MAINTWIZ TECHNOLOGIES</span> </h3> <p>JAN 2019 - MAY 2019</p> <ul> <li> Conducted security assessments and monitored security events, maintaining team engagement. </li> <li> Investigated and resolved over 50 security incidents with a 90% success rate. </li> </ul> </div> </div> </div> </div> </section> <section id="projects"> <div class="projects-container"> <h2 class="typing-projects"> <span class="changing-text-projects"></span ><span class="cursor-projects">|</span> </h2> <div class="projects-grid"> <div class="project-box"> <div class="folder-icon"> <img src="icons/folder.png" alt="Folder" /> </div> <div class="github-icon"> <a href="https://github.com/project1" target="_blank"> <img src="icons/github.png" alt="GitHub" /> </a> </div> <h3>Project 1</h3> <p>Description of Project 1</p> </div> <div class="project-box"> <div class="folder-icon"> <img src="icons/folder.png" alt="Folder" /> </div> <div class="github-icon"> <a href="https://github.com/project2" target="_blank"> <img src="icons/github.png" alt="GitHub" /> </a> </div> <h3>Project 2</h3> <p>Description of Project 2</p> </div> <div class="project-box"> <div class="folder-icon"> <img src="icons/folder.png" alt="Folder" /> </div> <div class="github-icon"> <a href="https://github.com/project3" target="_blank"> <img src="icons/github.png" alt="GitHub" /> </a> </div> <h3>Project 3</h3> <p>Description of Project 3</p> </div> </div> </div> </section> <section id="certifications"> <div class="certifications-container"> <h2 class="typing-certifications"> <span class="changing-text-certifications"></span ><span class="cursor-certifications">|</span> </h2> <div class="certifications-grid"> <div class="certification-box"> <h3>Certified in Cybersecurity (In progress)</h3> <p> The Certified in Cybersecurity (CC) certification is provided by (ISC)² </p> <div class="certification-icon"> <img src="icons/certification.png" alt="Certification" /> </div> </div> <div class="certification-box"> <h3> CompTIA Security+ <br /> (In progress) </h3> <p>The CompTIA Security+ certification is provided by CompTIA</p> <div class="certification-icon"> <img src="icons/certification.png" alt="Certification" /> </div> </div> </div> </div> </section> <footer> <p>&copy; 2024 Swetha Sundaram. All rights reserved.</p> </footer> <script src="scripts.js"></script> </body></html>
